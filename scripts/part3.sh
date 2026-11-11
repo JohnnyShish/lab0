@@ -22,6 +22,7 @@ rm first_shift
 
 cat claude_monet/kitchen/shift_plan
 ls -li claude_monet/kitchen/shift_plan
+rm claude_monet/kitchen/shift_plan
 
 rm claude_monet/kitchen/cold_station/fedya_task
 rmdir claude_monet/kitchen/cold_station

@@ -58,7 +58,7 @@ echo "Первая задача получена от шефа" >> first_shift
 
 #права_каталоги
 chmod 755 claude_monet
-chmod 750 claude_monet/kitchen
+chmod u=rwx,g=rx,o= claude_monet/kitchen
 chmod 770 claude_monet/kitchen/hot_station
 chmod u=rwx,g=rx,o= claude_monet/kitchen/cold_station
 chmod 755 claude_monet/hall
@@ -66,17 +66,17 @@ chmod u=rwx,g=x,o= claude_monet/office
 chmod u=rwx,g=rx,o= locker_room
 
 #права_файлыы
-chmod 640 claude_monet/kitchen/hot_station/barinov_order
+chmod u=rw,g=r,o= claude_monet/kitchen/hot_station/barinov_order
 chmod 640 claude_monet/kitchen/hot_station/senya_task
 chmod 600 claude_monet/kitchen/cold_station/fedya_task
-chmod 644 claude_monet/kitchen/menu_draft
-chmod 664 claude_monet/hall/reservations
+chmod u=rw,g=r,o=r claude_monet/kitchen/menu_draft
+chmod u=rw,g=rw,o=r claude_monet/hall/reservations
 chmod 444 claude_monet/hall/guest_reviews
 chmod 640 claude_monet/office/vika_schedule
 chmod 600 locker_room/max_resume
 chmod u=r,g=r,o= locker_room/leva_note
 chmod 444 nagiev_message
-chmod 644 first_shift
+chmod u=rw,g=r,o=r first_shift
 
 echo "Часть 1 завершена"
 ls -lR
